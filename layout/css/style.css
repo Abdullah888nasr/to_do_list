@@ -1,0 +1,85 @@
+/*Start General*/
+
+.errors{
+    margin-top: 20px;
+    text-align: center;
+    width: 35%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: bold;;
+}
+.errors .msg-success{margin-bottom: 5px;}
+.msg-success i{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #333;
+    border-radius: 50%;
+    color:#eee;
+    margin-right: 10px;
+}
+
+/*End General*/
+
+/*Start navbar*/
+
+.img-brand{padding: 10px 15px;}
+.img-brand img{
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+}
+.navbar-inverse{border-radius: 0;}
+
+/*End navbar*/
+
+/*Start login page*/
+
+.logForm{
+    width: 400px;
+    margin: 50px auto;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+.logForm h1{
+    margin-top: 5px;
+    font-weight: bold;
+    color:#888;
+}
+.logForm .btn-info{width: 49%;margin-bottom: 10px;}
+.logForm .active{background-color: #77f;}
+.signForm{display: none;}
+.errors {color:#f00;font-weight: bold;}
+.logForm .password{position: relative;}
+.logForm .password i{
+    color:#aaa;
+    text-decoration: line-through;
+    position: absolute;
+    top: 27%;
+    right:3%;
+    display: none;
+    cursor: pointer;
+}
+
+/*End login page*/
+
+/*Start index page*/
+
+.container .form-control, .container textarea{margin-bottom: 20px;}
+.container textarea{height: 200px;}
+.do-list li{padding: 5px;font-size: 18px;cursor: pointer;}
+.do-list hr{margin: 0;}
+.do-list li .detail{display: none;font-size: 14px;}
+.do-list .close{
+    float: right;
+    margin-top: 15px;
+    margin-left: 8px;
+    display: none;
+}
+.do-list li:hover .close{display: block;}
+
+/*End index page*/
