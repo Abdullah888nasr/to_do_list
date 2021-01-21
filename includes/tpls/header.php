@@ -26,7 +26,9 @@
             <div class="collapse navbar-collapse" id="app-nav">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['username']; ?><span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <?php echo $_SESSION['username']; ?><span class="caret"></span>
+                        </a>
                         <ul class="dropdown-menu">
                         <li><a href="index.php?action=reset" class="confirm">Delete All Tasks</a></li>
                         <li><a href="login.php?action=logout">Logout</a></li>
