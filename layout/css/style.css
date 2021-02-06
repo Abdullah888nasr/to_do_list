@@ -39,8 +39,8 @@
 /*Start login page*/
 
 .logForm{
-    width: 400px;
-    margin: 50px auto;
+    margin: 100px auto;
+    float: none;
     background-color: #ddd;
     padding: 20px;
     border-radius: 10px;

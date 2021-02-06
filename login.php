@@ -68,39 +68,41 @@
     endif;
 ?>
     <div class="container">
-        <div class="logForm text-center">
-            <a href="#" data-class="login" class="btn btn-info log active">Login</a>
-            <a href="#" data-class="signup" class="btn btn-info log">Sign up</a>
-            <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" class="loginForm">
-                <input type="text" placeholder="Username" name="username" class="form-control" autocomplete="off">
-                <div class="password">
-                    <input type="password" placeholder="Password" name="password" class="form-control" autocomplete="new-password">
-                    <i class="fa fa-eye"></i>
-                </div>
-                <input type="submit" name="login" value="Login" class="btn btn-info btn-lg btn-block">
-            </form>
-            <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" class="signForm">
-                <input type="text" placeholder="Username" name="username" class="form-control" autocomplete="off" >
-                <div class="password">
-                    <input type="password" placeholder="Password" name="password" class="form-control" autocomplete="new-password" >
-                    <i class="fa fa-eye"></i>
-                </div>
-                <div class="password">
-                    <input type="password" placeholder="Confirm Password" name="ConPassword" class="form-control" autocomplete="new-password" >
-                    <i class="fa fa-eye"></i>
-                </div>
-                <input type="email" placeholder="Email" name="email" autocomplete="off" class="form-control">
-                <input type="submit" name="signup" value="Sign up" class="btn btn-info btn-lg btn-block">
-            </form>
+        <div class="row">
+            <div class="logForm text-center col-lg-4 col-md-6">
+                <a href="#" data-class="login" class="btn btn-info log active">Login</a>
+                <a href="#" data-class="signup" class="btn btn-info log">Sign up</a>
+                <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" class="loginForm">
+                    <input type="text" placeholder="Username" name="username" class="form-control" autocomplete="off">
+                    <div class="password">
+                        <input type="password" placeholder="Password" name="password" class="form-control" autocomplete="new-password">
+                        <i class="fa fa-eye"></i>
+                    </div>
+                    <input type="submit" name="login" value="Login" class="btn btn-info btn-lg btn-block">
+                </form>
+                <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>" class="signForm">
+                    <input type="text" placeholder="Username" name="username" class="form-control" autocomplete="off" >
+                    <div class="password">
+                        <input type="password" placeholder="Password" name="password" class="form-control" autocomplete="new-password" >
+                        <i class="fa fa-eye"></i>
+                    </div>
+                    <div class="password">
+                        <input type="password" placeholder="Confirm Password" name="ConPassword" class="form-control" autocomplete="new-password" >
+                        <i class="fa fa-eye"></i>
+                    </div>
+                    <input type="email" placeholder="Email" name="email" autocomplete="off" class="form-control">
+                    <input type="submit" name="signup" value="Sign up" class="btn btn-info btn-lg btn-block">
+                </form>
+            </div>
+            <?php 
+                if(!empty($errors)):
+                    echo '<div class="errors">';
+                    foreach($errors as $error):
+                        errorMessage($error);
+                    endforeach;
+                    echo '</div>';
+                endif;
+            ?>
         </div>
-        <?php 
-            if(!empty($errors)):
-                echo '<div class="errors">';
-                foreach($errors as $error):
-                    errorMessage($error);
-                endforeach;
-                echo '</div>';
-            endif;
-        ?>
     </div>
 <?php require_once $tpls.'footer.php';?>
