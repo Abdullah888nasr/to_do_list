@@ -38,6 +38,9 @@
         float: right;
         margin-top: -50px;
     }
+    .errors{
+        width: 65%;
+    }
 }
 .nav a{
     color: #666;
