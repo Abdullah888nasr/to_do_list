@@ -33,7 +33,15 @@
     height: 30px;
 }
 .navbar-inverse{border-radius: 0;}
-
+@media (max-width: 768px){
+    .nav{
+        float: right;
+        margin-top: -50px;
+    }
+}
+.nav a{
+    color: #666;
+}
 /*End navbar*/
 
 /*Start login page*/
